@@ -1,0 +1,600 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://service.external.kapu.hikvision.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="ThirdBayonetServiceService" targetNamespace="http://service.external.kapu.hikvision.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.external.kapu.hikvision.com/" elementFormDefault="unqualified" targetNamespace="http://service.external.kapu.hikvision.com/" version="1.0">
+
+  <xs:element name="UndoPlateAlarmInfo" type="tns:UndoPlateAlarmInfo"/>
+
+  <xs:element name="UndoPlateAlarmInfoResponse" type="tns:UndoPlateAlarmInfoResponse"/>
+
+  <xs:element name="deleteCrossingInfo" type="tns:deleteCrossingInfo"/>
+
+  <xs:element name="deleteCrossingInfoResponse" type="tns:deleteCrossingInfoResponse"/>
+
+  <xs:element name="deletePlateAlarmInfo" type="tns:deletePlateAlarmInfo"/>
+
+  <xs:element name="deletePlateAlarmInfoResponse" type="tns:deletePlateAlarmInfoResponse"/>
+
+  <xs:element name="getAllCrossingInfo" type="tns:getAllCrossingInfo"/>
+
+  <xs:element name="getAllCrossingInfoResponse" type="tns:getAllCrossingInfoResponse"/>
+
+  <xs:element name="getRecentMessage" type="tns:getRecentMessage"/>
+
+  <xs:element name="getRecentMessageResponse" type="tns:getRecentMessageResponse"/>
+
+  <xs:element name="initSystem" type="tns:initSystem"/>
+
+  <xs:element name="initSystemResponse" type="tns:initSystemResponse"/>
+
+  <xs:element name="insertCrossingInfo" type="tns:insertCrossingInfo"/>
+
+  <xs:element name="insertCrossingInfoResponse" type="tns:insertCrossingInfoResponse"/>
+
+  <xs:element name="insertPlateAlarmInfo" type="tns:insertPlateAlarmInfo"/>
+
+  <xs:element name="insertPlateAlarmInfoResponse" type="tns:insertPlateAlarmInfoResponse"/>
+
+  <xs:element name="insertVehicleInfo" type="tns:insertVehicleInfo"/>
+
+  <xs:element name="insertVehicleInfoResponse" type="tns:insertVehicleInfoResponse"/>
+
+  <xs:element name="modifyCrossingInfo" type="tns:modifyCrossingInfo"/>
+
+  <xs:element name="modifyCrossingInfoResponse" type="tns:modifyCrossingInfoResponse"/>
+
+  <xs:element name="modifyPlateAlarmInfo" type="tns:modifyPlateAlarmInfo"/>
+
+  <xs:element name="modifyPlateAlarmInfoResponse" type="tns:modifyPlateAlarmInfoResponse"/>
+
+  <xs:element name="searchCrossingInfo" type="tns:searchCrossingInfo"/>
+
+  <xs:element name="searchCrossingInfoResponse" type="tns:searchCrossingInfoResponse"/>
+
+  <xs:element name="searchVehicleInfo" type="tns:searchVehicleInfo"/>
+
+  <xs:element name="searchVehicleInfoResponse" type="tns:searchVehicleInfoResponse"/>
+
+  <xs:element name="updateVehicleInfo" type="tns:updateVehicleInfo"/>
+
+  <xs:element name="updateVehicleInfoResponse" type="tns:updateVehicleInfoResponse"/>
+
+  <xs:element name="uploadVehicleImage" type="tns:uploadVehicleImage"/>
+
+  <xs:element name="uploadVehicleImageResponse" type="tns:uploadVehicleImageResponse"/>
+
+  <xs:complexType name="deletePlateAlarmInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deletePlateAlarmInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modifyCrossingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modifyCrossingInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="searchVehicleInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="searchVehicleInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="initSystem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="initSystemResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertPlateAlarmInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertPlateAlarmInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modifyPlateAlarmInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="modifyPlateAlarmInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="uploadVehicleImage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="uploadVehicleImageResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteCrossingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteCrossingInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="searchCrossingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="searchCrossingInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateVehicleInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateVehicleInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getRecentMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getRecentMessageResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertCrossingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertCrossingInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getAllCrossingInfo">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getAllCrossingInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="UndoPlateAlarmInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="UndoPlateAlarmInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertVehicleInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertVehicleInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="uploadVehicleImageResponse">
+    <wsdl:part element="tns:uploadVehicleImageResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="insertVehicleInfoResponse">
+    <wsdl:part element="tns:insertVehicleInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deletePlateAlarmInfoResponse">
+    <wsdl:part element="tns:deletePlateAlarmInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteCrossingInfoResponse">
+    <wsdl:part element="tns:deleteCrossingInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deletePlateAlarmInfo">
+    <wsdl:part element="tns:deletePlateAlarmInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modifyCrossingInfo">
+    <wsdl:part element="tns:modifyCrossingInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="initSystemResponse">
+    <wsdl:part element="tns:initSystemResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="insertPlateAlarmInfo">
+    <wsdl:part element="tns:insertPlateAlarmInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modifyPlateAlarmInfo">
+    <wsdl:part element="tns:modifyPlateAlarmInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="uploadVehicleImage">
+    <wsdl:part element="tns:uploadVehicleImage" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRecentMessageResponse">
+    <wsdl:part element="tns:getRecentMessageResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateVehicleInfo">
+    <wsdl:part element="tns:updateVehicleInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UndoPlateAlarmInfoResponse">
+    <wsdl:part element="tns:UndoPlateAlarmInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="insertCrossingInfo">
+    <wsdl:part element="tns:insertCrossingInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllCrossingInfo">
+    <wsdl:part element="tns:getAllCrossingInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UndoPlateAlarmInfo">
+    <wsdl:part element="tns:UndoPlateAlarmInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="searchCrossingInfoResponse">
+    <wsdl:part element="tns:searchCrossingInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllCrossingInfoResponse">
+    <wsdl:part element="tns:getAllCrossingInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="searchVehicleInfo">
+    <wsdl:part element="tns:searchVehicleInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="initSystem">
+    <wsdl:part element="tns:initSystem" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modifyCrossingInfoResponse">
+    <wsdl:part element="tns:modifyCrossingInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="searchVehicleInfoResponse">
+    <wsdl:part element="tns:searchVehicleInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteCrossingInfo">
+    <wsdl:part element="tns:deleteCrossingInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="insertCrossingInfoResponse">
+    <wsdl:part element="tns:insertCrossingInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="searchCrossingInfo">
+    <wsdl:part element="tns:searchCrossingInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateVehicleInfoResponse">
+    <wsdl:part element="tns:updateVehicleInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="insertPlateAlarmInfoResponse">
+    <wsdl:part element="tns:insertPlateAlarmInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRecentMessage">
+    <wsdl:part element="tns:getRecentMessage" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modifyPlateAlarmInfoResponse">
+    <wsdl:part element="tns:modifyPlateAlarmInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="insertVehicleInfo">
+    <wsdl:part element="tns:insertVehicleInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ThirdBayonetService">
+    <wsdl:operation name="deletePlateAlarmInfo">
+      <wsdl:input message="tns:deletePlateAlarmInfo" name="deletePlateAlarmInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:deletePlateAlarmInfoResponse" name="deletePlateAlarmInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyCrossingInfo">
+      <wsdl:input message="tns:modifyCrossingInfo" name="modifyCrossingInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:modifyCrossingInfoResponse" name="modifyCrossingInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchVehicleInfo">
+      <wsdl:input message="tns:searchVehicleInfo" name="searchVehicleInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:searchVehicleInfoResponse" name="searchVehicleInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="initSystem">
+      <wsdl:input message="tns:initSystem" name="initSystem">
+    </wsdl:input>
+      <wsdl:output message="tns:initSystemResponse" name="initSystemResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertPlateAlarmInfo">
+      <wsdl:input message="tns:insertPlateAlarmInfo" name="insertPlateAlarmInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:insertPlateAlarmInfoResponse" name="insertPlateAlarmInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyPlateAlarmInfo">
+      <wsdl:input message="tns:modifyPlateAlarmInfo" name="modifyPlateAlarmInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:modifyPlateAlarmInfoResponse" name="modifyPlateAlarmInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadVehicleImage">
+      <wsdl:input message="tns:uploadVehicleImage" name="uploadVehicleImage">
+    </wsdl:input>
+      <wsdl:output message="tns:uploadVehicleImageResponse" name="uploadVehicleImageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteCrossingInfo">
+      <wsdl:input message="tns:deleteCrossingInfo" name="deleteCrossingInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteCrossingInfoResponse" name="deleteCrossingInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchCrossingInfo">
+      <wsdl:input message="tns:searchCrossingInfo" name="searchCrossingInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:searchCrossingInfoResponse" name="searchCrossingInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateVehicleInfo">
+      <wsdl:input message="tns:updateVehicleInfo" name="updateVehicleInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:updateVehicleInfoResponse" name="updateVehicleInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRecentMessage">
+      <wsdl:input message="tns:getRecentMessage" name="getRecentMessage">
+    </wsdl:input>
+      <wsdl:output message="tns:getRecentMessageResponse" name="getRecentMessageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertCrossingInfo">
+      <wsdl:input message="tns:insertCrossingInfo" name="insertCrossingInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:insertCrossingInfoResponse" name="insertCrossingInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllCrossingInfo">
+      <wsdl:input message="tns:getAllCrossingInfo" name="getAllCrossingInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:getAllCrossingInfoResponse" name="getAllCrossingInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UndoPlateAlarmInfo">
+      <wsdl:input message="tns:UndoPlateAlarmInfo" name="UndoPlateAlarmInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:UndoPlateAlarmInfoResponse" name="UndoPlateAlarmInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertVehicleInfo">
+      <wsdl:input message="tns:insertVehicleInfo" name="insertVehicleInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:insertVehicleInfoResponse" name="insertVehicleInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ThirdBayonetServiceServiceSoapBinding" type="tns:ThirdBayonetService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="deletePlateAlarmInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deletePlateAlarmInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deletePlateAlarmInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyCrossingInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="modifyCrossingInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="modifyCrossingInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchVehicleInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="searchVehicleInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="searchVehicleInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="initSystem">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="initSystem">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="initSystemResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertPlateAlarmInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="insertPlateAlarmInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="insertPlateAlarmInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyPlateAlarmInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="modifyPlateAlarmInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="modifyPlateAlarmInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadVehicleImage">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="uploadVehicleImage">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="uploadVehicleImageResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteCrossingInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteCrossingInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteCrossingInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchCrossingInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="searchCrossingInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="searchCrossingInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateVehicleInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="updateVehicleInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateVehicleInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRecentMessage">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getRecentMessage">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRecentMessageResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertCrossingInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="insertCrossingInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="insertCrossingInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllCrossingInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllCrossingInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllCrossingInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UndoPlateAlarmInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="UndoPlateAlarmInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="UndoPlateAlarmInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertVehicleInfo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="insertVehicleInfo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="insertVehicleInfoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ThirdBayonetServiceService">
+    <wsdl:port binding="tns:ThirdBayonetServiceServiceSoapBinding" name="ThirdBayonetServicePort">
+      <soap:address location="https://52.109.3.192/bms/services/ThirdBayonetService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
